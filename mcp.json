@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "ethmumbai-subgraph-indexer-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Arbitrum / Ethereum L2",
+        "PROJECT_TICKER": "EMINDEX"
+      },
+      "tools": [
+        {
+          "name": "verify_emindex_invariants",
+          "description": "Verifies deterministic invariants for ETHMumbai Subgraph Indexer AI on Arbitrum / Ethereum L2."
+        },
+        {
+          "name": "execute_emindex_action",
+          "description": "Executes authenticated Dev Tool state transition."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+[package]
+name = "ethmumbai-subgraph-indexer-ai"
+version = "1.0.0"
+edition = "2021"
+authors = ["Martin Luther <martinlutherupa1@gmail.com>"]
+description = "Real-time streaming subgraph and GraphQL indexer"
+license = "MIT"
+
+[dependencies]
